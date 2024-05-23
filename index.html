@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salud en Casa</title>
     <script src="https://kit.fontawesome.com/16a06030b6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="card.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/card.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+</head>
 </head>
 
 <body class="" style="background-color: #282828;">
@@ -23,12 +28,12 @@
      -->
     <nav>
         <div class="nav_container">
-            <div>
-                <!-- <img src="assets/logo_sin_fondo.png" alt=""> -->
+            <div class="d-flex align-items-center ">
+                <!-- <img src="assets/logo_3.jpg" alt=""> -->
                 <h1>Salud en Casa</h1>
             </div>
 
-            <div class="menu">
+            <!-- <div class="menu">
                 <ul>
                     <li>Main Pages</li>
                     <li>Landing Page</li>
@@ -37,7 +42,7 @@
                 <div>
                     <a href="">Register Now</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </nav>
 
@@ -54,22 +59,55 @@
                         <h1>46 <span>Minutos</span></h1>
                     </div>
                     <div class="header_info">
-                        <h2>May 14-16, 2023 <span> - </span> San Francisco, CA</h2>
                         <h1>ESTAS LISTO?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <br> Doloremque exercitationem porro iusto?
-                        </p>
                         <div class="header_botones">
                             <a href="" class="boton_register">Registrate</a>
-                            <a href="" class="boton_agenda">Ver Agenda</a>
+                            <button type="button" class="boton_agenda" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                Ver Agenda
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Agenda</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body px-4">
+                        <h1>Hola equipo! A pocos días de la convención Virtual, les compartimos los horarios del evento:
+                        </h1>
+                        <span class="">Programa General de la Convención.</span>
+                        <div class="mt-2">
+                            <p><span>Sábado</span> sesión de jóvenes</p>
+                            <p>10:30am - 11:00am *MEX</p>
+                            <p>11:00am a 2pm sesión general</p>
+                            <p>Break</p>
+                            <p>5pm - 10pm sesión general</p>
+
+                            <p><span>Domingo</span>10:00am - 2:00pm *MEX</p>
+
+                            <p><span>Nota:</span> La plataforma se abrirá aproximadamente 10 minutos antes del
+                                inicio de cada sesión.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="seccion_uno">
-            <div>
+            <div class="seccion_uno_text">
                 <span>Eyebrow Lorem</span>
                 <h1>Oradores <br>
                     Inspiracionales</h1>
@@ -77,22 +115,62 @@
                 <a href="">View The Lineup</a>
             </div>
             <div class="seccion_uno_card">
-                <div class="package">
-                    <div class="package2">
-                        <img src="assets/Identidad/Countdown/countdown_latam_may24_3dias.jpg" alt="">
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide" data-splide-hash="slide01">
+                                <div class="card_splide_content">
+                                    <div class="package">
+                                        <div class="package2">
+                                            <img src="assets/Identidad/Countdown/countdown_latam_may24_3dias.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide" data-splide-hash="slide02">
+                                <div class="card_splide_content">
+                                    <div class="package">
+                                        <div class="package2">
+                                            <img src="assets/Identidad/Countdown/countdown_latam_may24_3dias.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide" data-splide-hash="slide03">
+                                <div class="card_splide_content">
+                                    <div class="package">
+                                        <div class="package2">
+                                            <img src="assets/Identidad/Countdown/countdown_latam_may24_3dias.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide" data-splide-hash="slide03">
+                                <div class="card_splide_content">
+                                    <div class="package">
+                                        <div class="package2">
+                                            <img src="assets/Identidad/Countdown/countdown_latam_may24_3dias.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide" data-splide-hash="slide03">
+                                <div class="card_splide_content">
+                                    <div class="package">
+                                        <div class="package2">
+                                            <img src="assets/Identidad/Countdown/countdown_latam_may24_3dias.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="package">
-                    <div class="package2">
-                        <img src="assets/Identidad/Countdown/countdown_latam_may24_4dias.jpg" alt="">
-                    </div>
-                </div>
-                <div class="package">
-                    <div class="package2">
-                        <img src="assets/Identidad/Countdown/countdown_latam_may24_5dias.jpg" alt="">
-                    </div>
-                </div>
-
 
             </div>
         </div>
@@ -144,7 +222,51 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+
+    <script src="assets/js/splide.js"></script>
+
+    <script>
+        new Splide('.splide', {
+            autoplay: true,
+            perPage: 4,
+            perMove: 1,
+            rewind: true,
+            // focus: 'center',
+            width: '100%',
+            gap: '1rem',
+            drag: false,
+            trimSpace: false,
+            trimSpace: false,
+            pagination: true,
+            arrows: false,
+            padding: 30,
+            breakpoints: {
+                1200: {
+                    perPage: 3,
+                    gap: '2rem'
+                },
+                800: {
+                    perPage: 2.5,
+                    gap: '5rem'
+
+                },
+                500: {
+                    perPage: 1
+                }
+            }
+        }).mount();
+    </script>
 </body>
 
 </html>
