@@ -221,7 +221,7 @@ nav ul li {
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 4rem 15rem 0rem 15rem;
+    padding: 4rem 20rem 0rem 20rem;
 }
 
 .footer hr {
@@ -234,13 +234,18 @@ nav ul li {
 
 .footer_email {
     background-color: #fa9c18;
-    display: flex;
     border-radius: 10px;
     color: #000000;
-    padding: 3rem 3rem;
+    width: 100%;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.footer_email_container {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0px 4rem;
+    padding: 3rem;
 }
 
 .footer_email h1 {
