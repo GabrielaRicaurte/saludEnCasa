@@ -188,6 +188,8 @@ nav ul li {
     margin: 0px 10px;
 }
 
+/* seccion uno */
+
 .seccion_uno { 
     position: relative;
     color: white;
@@ -235,6 +237,30 @@ nav ul li {
 .card_splide_content {
     padding: 2rem 0px;
 }
+
+
+/* seccion dos */
+
+.seccion_dos {
+    padding: 0px 8rem;
+}
+
+.seccion_dos h1 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.seccion_dos hr {
+    height: 1px;
+    margin-top: 3rem;
+    background-color: rgb(85, 85, 85);
+}
+
+/* footer */
 
 .footer {
     background-color: #000000;
