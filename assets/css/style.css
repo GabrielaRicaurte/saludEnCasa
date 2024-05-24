@@ -29,6 +29,7 @@ nav {
 
 nav h1 {
     margin: 0px;
+    font-size: 40px;
 }
 
 nav ul {
@@ -193,7 +194,7 @@ nav ul li {
 .seccion_uno { 
     position: relative;
     color: white;
-    padding: 2rem 8rem;
+    padding: 5rem 8rem;
     display: flex;
     gap: 0px 4rem;
 }
@@ -242,22 +243,55 @@ nav ul li {
 /* seccion dos */
 
 .seccion_dos {
-    padding: 0px 8rem;
+    padding: 1rem 8rem;
+    color: white;
+    background-color: #1a1a1a;
 }
 
-.seccion_dos h1 {
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    margin-top: 50px;
-    color: white;
-    margin-bottom: 2rem;
+.seccion_dos_text {
     text-align: center;
 }
 
-.seccion_dos hr {
-    height: 1px;
-    margin-top: 3rem;
-    background-color: rgb(85, 85, 85);
+.seccion_dos_text h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 2rem;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.seccion_dos_text p {
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+
+.seccion_dos a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    background: rgb(235, 162, 65);
+    background: linear-gradient(90deg, rgba(235, 162, 65, 1) 0%, rgba(255, 166, 44, 1) 30%);
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 800;
+    margin: 0px 10px;
+}
+
+.seccion_dos a:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    background: rgb(235, 162, 65);
+    background: linear-gradient(90deg, rgba(235, 162, 65, 1) 0%, rgba(255, 166, 44, 1) 30%);
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 800;
+    margin: 0px 10px;
 }
 
 /* footer */

@@ -1,20 +1,22 @@
-.design-section {
+.design-section_timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     padding: 25px 0;
-    font-family: Jost;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
 }
 
-.design {
+.design_timeline {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.timeline {
+.timeline_timeline {
     width: 80%;
     height: auto;
     max-width: 800px;
@@ -23,11 +25,11 @@
     flex-direction: column;
 }
 
-.timeline-content {
+/* .timeline-content_timeline {
     padding: 20px;
     background: #1f1f1f;
     -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    box-shadow: 0px 0px 5px 3px #FE871F;
     border-radius: 5px;
     color: white;
     padding: 1.75rem;
@@ -36,37 +38,64 @@
     margin: 1rem;
     margin-bottom: 20px;
     border-radius: 6px;
+} */
+.timeline-content_timeline {
+    width: 400px;
+    background-image: linear-gradient(163deg, #EBA241 0%, #FFA62C 100%);
+    color: white;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    transition: all 0.25s cubic-bezier(0, 0, 0, 1);
 }
 
-.timeline-component {
+.timeline-content_timeline:hover {
+    box-shadow: 0px 0px 15px 1px #FE871F;
+}
+
+.package2_timeline {
+    width: 370px;
+    padding: 1rem;
+    background-color: #282828;
+    border-radius: 10px;
+    transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+    /* padding: 15px; */
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.package2_timeline:hover {
+    transform: scale(1);
+    border-radius: 6px;
+}
+
+.timeline-component_timeline {
     margin: 0px 20px 20px 20px;
 }
 
-.timeline-content h1 {
+.timeline-content_timeline h1 {
     font-size: 18px;
-}
-.timeline-content span {
-    font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
-    .timeline {
+    .timeline_timeline {
         display: grid;
         grid-template-columns: 1fr 3px 1fr;
     }
 
-    .timeline-middle {
+    .timeline-middle_timeline {
         position: relative;
         background-image: linear-gradient(45deg, #F27121, #EBA241, #FFA62C);
         width: 3px;
         height: 100%;
     }
 
-    .main-middle {
+    .main-middle_timeline {
         opacity: 0;
     }
 
-    .timeline-circle {
+    .timeline-circle_timeline {
         position: absolute;
         top: 0;
         left: 50%;
